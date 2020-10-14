@@ -1,0 +1,73 @@
+aside:nth-child(1) {
+    grid-area: aside1;
+}
+
+aside:nth-child(2) {
+    grid-area: aside2;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'aside1 d1 d2 d3 aside2 '
+        'aside1 d4 d5 d6 aside2 '
+        'aside1 d7 d8 d9 aside2 '
+        'xis placar placar placar bolinha ';
+    grid-template-columns: 20vw 20vw 20vw 20vw 19.7vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    margin:0;
+    padding-top: 10px; 
+}
+
+div{
+    border: solid black 5px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#d1{
+    border-left: 0;
+    border-top: 0;
+}
+#d2{
+    border-top: 5px;
+}
+#d3{
+   border-top: 0;
+   border-right: 0;
+}
+#d4{
+   border-left: 0;
+}
+#d5{
+    border: solid black 5px;
+}
+#d6{
+    border-right: 0;
+}
+#d7{
+    border-left: 0;
+    border-bottom: 0;
+}
+
+#d8{
+    border-bottom: 0;
+}
+
+#d9{
+    border-right: 0;
+    border-bottom: 0;
+}
+
+footer {
+    grid-area: placar;
+    padding: 0 20px 20px;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+img {
+    width: 95%;
+}
